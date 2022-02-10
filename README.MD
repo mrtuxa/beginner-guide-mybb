@@ -356,25 +356,26 @@ rm -rvf installation
 
 // chinese (simplified)
 
-This is a guide on how to install and how to configure MyBB Forum. 
-
-Step 1.
-
-Installing phpmyadmin with this script.
+这是一份关于如何安装和如何配置MyBB论坛的指南。
 
 
-For Ubuntu
+步骤1。
+
+用这个脚本安装phpmyadmin。
+
+
+对于Ubuntu
 ```bash
 wget https://raw.githubusercontent.com/mrtuxa/mariadbautomaticinstall-ubuntu/main/phpmyadmin.sh; chmod +x phpmyadmin.sh; bash phpmyadmin.sh
 ```
 
-For Debian
+对于 Debian
 
 ```
 wget https://raw.githubusercontent.com/mrtuxa/mariadbautomaticinstall/main/phpmyadmin.sh; chmod +x phpmyadmin.sh; bash phpmyadmin.sh
 ```
 
-Step 2: Downloading the mybb archive
+第2步：下载mybb档案
 
 ``
 cd /var/www/html
@@ -420,7 +421,7 @@ chmod 666 inc/languages/english/*.php inc/languages/english/admin/*.php
 chmod 777 cache/ cache/themes/ uploads/ uploads/avatars/ admin/backups/
 ``
 
-Step 3: Create the database user and database table
+第3步：创建数据库用户和数据库表
 
 ``
 mysql -u root
@@ -445,7 +446,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql>
 ```
 
-this will show up, then u need to run this command exactly as shown, but with your own data
+这将显示出来，然后你需要运行这个命令，完全如图所示，但使用你自己的数据
 
 ``
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
@@ -463,8 +464,8 @@ GRANT ALL PRIVILEGES ON forum . * TO 'user'@'localhost';
 FLUSH PRIVILEGES;
 ``
 
-Step 4: configure everything what the installer wants to know,
-        after configuring you need to type in the last command.
+第4步：配置安装程序想知道的一切。
+        配置完毕后，你需要输入最后一条命令。
         
 ``
 cd /var/www/html/forum
