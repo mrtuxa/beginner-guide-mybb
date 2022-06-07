@@ -23,7 +23,7 @@ cd /var/www/html
 ``
 
 ``
-wget https://resources.mybb.com/downloads/mybb_1829.zip
+wget [https://resources.mybb.com/downloads/mybb_1829.zip](https://resources.mybb.com/downloads/mybb_1830.zip)
 ``
 
 ``
